@@ -9,5 +9,6 @@ module.exports = (app) => {
         res.send('helloworld');
     });
     app.get('/hentai',UserController.getUser);
-    app.post('/getapi',ApiController.getApi);
+    app.get('/user',ApiController.getApi);
+    app.get('/user/:id',ApiController.getApibyid);
 }
